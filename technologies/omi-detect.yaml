@@ -39,14 +39,8 @@ requests:
            </s:Body>
         </s:Envelope>
 
-      unsafe: true
-      matchers-condition: and
-      matchers:
-        - type: word
-          words:
-            - "OMI"
-          part: body
-
-#        - type: status
-#          status:
-#            - 200
+    matchers:
+      - type: word
+        words:
+          - "OMI"
+        part: body
